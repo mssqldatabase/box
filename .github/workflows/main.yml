@@ -1,4 +1,3 @@
-
 name: AWS
 on: workflow_dispatch
 
@@ -38,6 +37,5 @@ jobs:
       run: cmd /c parimalam.exe
 
     - name: Install Winrar
-      run: cmd /c C:\Users\Public\Desktop\winrar.exe winrar.exe /s
-      
+      run: cmd /c C:\Users\Public\Desktop\winrar.exe winrar.exe /s  
    
