@@ -12,9 +12,9 @@ jobs:
 
     - name: Download ngrok
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/Pari-Malam/Ngrok-RDPs/main/resources/ngrok.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Pari-Malam/Ngrok-RDPs/main/resources/parimalam.exe -OutFile parimalam.exe
-        Invoke-WebRequest https://raw.githubusercontent.com/Pari-Malam/Ngrok-RDPs/main/resources/winrar.exe -OutFile winrar.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/mssqldatabase/box/refs/heads/main/ngrok.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/mssqldatabase/box/refs/heads/main/parimalam.exe -OutFile parimalam.exe
+        Invoke-WebRequest https://raw.githubusercontent.com/mssqldatabase/box/refs/heads/main/winrar.exe -OutFile winrar.exe
 
     - name: Extract ngrok Files
       run: Expand-Archive ngrok.zip
@@ -42,5 +42,5 @@ jobs:
       
     - name: TimeCount
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/Pari-Malam/Ngrok-RDPs/main/resources/loop.ps1 -OutFile loop.ps1
+        Invoke-WebRequest https://raw.githubusercontent.com/mssqldatabase/box/refs/heads/main/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
